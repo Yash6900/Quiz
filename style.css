@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+}
+
+body{
+    background: #D2E0FB;
+    font-family: 'Poppins', sans-serif;
+
+
+
+}
+main{
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+
+.app{
+            background: #F9F3CC;
+            width: 90%;
+            max-width: 600px;
+            margin: 100px auto 0;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow:0 5px 15px rgba(0, 0, 0, 0.1);;
+}
+
+.app h1 {
+    font-size: 35px;
+    font-weight: 600;
+    border-bottom: 2px solid #333;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.quiz{
+    padding: 15px 0;
+}
+
+.quiz h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.btn{
+    background: white;
+    color: black;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid black;
+    padding :10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ;
+    font-size: 15px;
+}
+
+.btn:hover:not([disabled]){
+    background:  #87aaef;
+    color: #fff;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+#next-btn{
+   
+    width: 100px;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    display: none;
+    margin-top: 0.5rem;
+    background: #9DBC98;
+    color: rgb(59, 53, 53);
+    padding: 0.4rem 0.6rem;
+    text-transform: capitalize;
+    border-radius: 0.3rem;
+    border-color: black;
+    cursor: pointer;
+    height: 40px;
+    width: 130px;
+    font-family:sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    
+}
+#next-btn:hover{
+    background: #AAD9BB;
+    color:black;
+}
+
+.correct{
+    background: #79AC78;
+}
+
+.incorrect{
+    background: #FF8080;
+}
+@media screen and (max-width: 768px) {
+    .app {
+        width: 80%;
+        margin: 50px auto 0;
+
+    }
+
+    .app h1 {
+        font-size: 28px;
+    }
+
+    #next-btn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .app h1 {
+        font-size: 24px;
+    }
+}
+
